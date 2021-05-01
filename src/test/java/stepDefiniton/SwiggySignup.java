@@ -2,6 +2,7 @@ package stepDefiniton;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -16,7 +17,7 @@ import pages.HomePage;
 import pages.SignUpPage;
 
 
-
+@Listeners(ListenerClass.class)
 public class SwiggySignup {
 	
 	WebDriver driver= Setup.driver	;
